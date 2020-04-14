@@ -6,9 +6,9 @@ const BookCard = (props) =>{
   return( 
       <div className ="card-container">
           <img src={props.image}alt={props.title} />
-            <h3>{props.title}</h3>
-            <h3>{props.author}</h3>
-            <h3>{props.published}</h3>
+            <p>{props.title}</p>
+            <h4>Author:{props.author}</h4>
+            <p>Publish Date:{props.published === '0000'? "not Available" : props.published.substring(0,4)}</p>
          
       </div>
   )
