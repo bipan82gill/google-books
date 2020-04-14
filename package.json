@@ -1,5 +1,5 @@
 {
-  "homepage":"http://bipan82gill.github.io/google-books",
+  "homepage": "http://bipan82gill.github.io/google-books",
   "name": "google-books",
   "version": "0.1.0",
   "private": true,
@@ -10,11 +10,12 @@
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "superagent": "^5.2.2"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
