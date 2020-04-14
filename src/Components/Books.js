@@ -8,7 +8,8 @@ class Books extends Component{
         super(props);
         this.state ={
             books:[],
-            searchField:''
+            searchField:'',
+            sort:''
         }
     }
 
@@ -25,6 +26,10 @@ class Books extends Component{
 
 handleSearch = (e) => {
     this.setState({ searchField: e.target.value});
+}
+
+handleSort = (e) => {
+    this.setState({ sort: e.target.value});
 }
 render(){
   return(
