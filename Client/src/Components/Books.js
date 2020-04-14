@@ -44,7 +44,7 @@ cleanData = (data) => {
     })
     return cleanData;
 }
-render() {
+render(){
     const sortedBooks = this.state.books.sort((a,b)=>{
         if(this.state.sort === 'Newest'){
             return parseInt(b.volumeInfo.publishedDate.substring(0,4))-parseInt(a.volumeInfo.publishedDate.substring(0,4))
